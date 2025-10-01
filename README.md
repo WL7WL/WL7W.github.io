@@ -18,34 +18,39 @@
             --card-bg: rgba(255, 255, 255, 0.05);
         }
         
-  { 
+        * { 
             margin: 0; 
             padding: 0; 
             box-sizing: border-box; 
             font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; 
         }
-             body { 
+        
+        body { 
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: var(--light); 
             line-height: 1.6; 
             min-height: 100vh;
             overflow-x: hidden;
-        }    
+        }
+        
         .container { 
             width: 90%; 
             max-width: 1200px; 
             margin: 0 auto; 
             padding: 0 15px; 
         }
+
         /* 全局链接样式 */
         a {
             text-decoration: none;
             color: var(--neon-blue);
         }
+
         a:hover {
             text-decoration: none;
             color: var(--neon-purple);
         }
+
         /* 科技感背景 */
         .tech-bg {
             position: fixed;
@@ -60,6 +65,7 @@
                 radial-gradient(circle at 80% 70%, rgba(185, 103, 255, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
         }
+
         /* 导航栏 */
         .navbar { 
             display: flex; 
@@ -74,13 +80,15 @@
             z-index: 1000; 
             border-bottom: 1px solid rgba(0, 204, 255, 0.2);
         }
+        
         .logo { 
             display: flex; 
             align-items: center; 
             font-weight: 700; 
             font-size: 1.4rem; 
             text-decoration: none;
-        }        
+        }
+        
         /* Logo设计 */
         .logo-img {
             width: 45px;
@@ -98,19 +106,23 @@
             box-shadow: 0 0 15px rgba(0, 204, 255, 0.5);
             transition: transform 0.3s, box-shadow 0.3s;
         }
-                .logo-img:hover {
+        
+        .logo-img:hover {
             transform: rotate(5deg);
             box-shadow: 0 0 20px rgba(185, 103, 255, 0.7);
         }
+        
         /* 顶部导航链接 */
         .top-nav-links { 
             display: flex; 
             list-style: none; 
-        }     
+        }
+        
         .top-nav-links li { 
             margin-left: 2rem; 
             position: relative;
-        } 
+        }
+        
         .top-nav-links a { 
             font-weight: 500; 
             transition: all 0.3s; 
@@ -118,11 +130,13 @@
             position: relative;
             text-decoration: none;
             color: var(--light);
-        } 
+        }
+        
         .top-nav-links a:hover { 
             color: var(--neon-blue); 
             transform: translateY(-2px);
         }
+
         .top-nav-links a::after {
             content: '';
             position: absolute;
@@ -132,14 +146,17 @@
             height: 2px;
             background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
             transition: width 0.3s;
-        }        
+        }
+        
         .top-nav-links a:hover::after {
             width: 100%;
         }
+
         /* 各部分通用样式 */
         section { 
             padding: 5rem 0; 
-        }        
+        }
+        
         .section-title { 
             text-align: center; 
             margin-bottom: 3rem; 
@@ -147,7 +164,8 @@
             position: relative; 
             color: var(--light);
             font-weight: 700;
-        }        
+        }
+        
         .section-title::after { 
             content: ''; 
             position: absolute; 
@@ -160,13 +178,15 @@
             border-radius: 2px; 
             box-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
         }
+
         /* 英雄区域 */
         #hero { 
             text-align: center; 
             padding: 8rem 0; 
             position: relative;
             overflow: hidden;
-        }     
+        }
+        
         #hero::before {
             content: '';
             position: absolute;
@@ -176,7 +196,8 @@
             height: 200%;
             background: radial-gradient(circle, rgba(0, 204, 255, 0.1) 0%, transparent 70%);
             transform: rotate(30deg);
-        }   
+        }
+        
         .hero-content h1 { 
             font-size: 3.5rem; 
             margin-bottom: 1rem; 
